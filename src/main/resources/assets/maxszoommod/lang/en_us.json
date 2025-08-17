@@ -6,9 +6,6 @@
   "maxszoommod.configuration.title": "Max's Zoom Mod Configs",
   "maxszoommod.configuration.section.maxszoommod.common.toml": "Max's Zoom Mod Configs",
   "maxszoommod.configuration.section.maxszoommod.common.toml.title": "Max's Zoom Mod Configs",
-  "maxszoommod.configuration.items": "Item List",
-  "maxszoommod.configuration.logDirtBlock": "Log Dirt Block",
-  "maxszoommod.configuration.magicNumberIntroduction": "Magic Number Text",
-  "maxszoommod.configuration.magicNumber": "Magic Number",
+  "maxszoommod.configuration.zoomFov": "Zoom FOV",
   "key.maxszoommod.zoom": "Max's Zoom Key"
 }

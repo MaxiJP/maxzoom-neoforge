@@ -6,6 +6,7 @@ import net.minecraft.client.KeyMapping;
 import net.neoforged.neoforge.client.event.RegisterKeyMappingsEvent;
 import org.lwjgl.glfw.GLFW;
 import org.slf4j.Logger;
+import net.minecraft.client.Minecraft;
 
 import com.mojang.logging.LogUtils;
 
@@ -52,16 +53,18 @@ public class MaxsZoomMod {
         // Some common setup code
         LOGGER.info("HELLO FROM COMMON SETUP");
 
-        LOGGER.info("{}{}", Config.MAGIC_NUMBER_INTRODUCTION.get(), Config.MAGIC_NUMBER.getAsInt());
-
-        Config.ITEM_STRINGS.get().forEach((item) -> LOGGER.info("ITEM >> {}", item));
+        LOGGER.info("{}{}", "Target FOV: ", Config.TARGET_FOV.getAsInt());
     }
 
     public void onComputeFov(ComputeFovModifierEvent event) {
         // Only run on the client player
             if (EventShit.EXAMPLE_MAPPING.isDown()) {
                 // Example: zoom in to 30% of normal FOV
-                event.setNewFovModifier(0.3f);
+
+                float realfov = Minecraft.getInstance().options.fov().get();
+
+                event.setNewFovModifier(Config.TARGET_FOV.getAsInt() / realfov);
+
             }
     }
 
