@@ -1,0 +1,14 @@
+{
+  "itemGroup.maxszoommod": "Example Mod Tab",
+  "block.maxszoommod.example_block": "Example Block",
+  "item.maxszoommod.example_item": "Example Item",
+
+  "maxszoommod.configuration.title": "Max's Zoom Mod Configs",
+  "maxszoommod.configuration.section.maxszoommod.common.toml": "Max's Zoom Mod Configs",
+  "maxszoommod.configuration.section.maxszoommod.common.toml.title": "Max's Zoom Mod Configs",
+  "maxszoommod.configuration.items": "Item List",
+  "maxszoommod.configuration.logDirtBlock": "Log Dirt Block",
+  "maxszoommod.configuration.magicNumberIntroduction": "Magic Number Text",
+  "maxszoommod.configuration.magicNumber": "Magic Number",
+  "key.maxszoommod.zoom": "Max's Zoom Key"
+}
